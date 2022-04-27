@@ -1,6 +1,5 @@
 .text {
-    margin: 0;
-    padding: 0;
+    margin: 0px 0px;
     font-family: "montserrat";
     background: linear-gradient(125deg, #F05E1C, #FFC408, #90B44B, #58B2DC, #86C166);
     background-size: 400%;
@@ -26,20 +25,16 @@ body {
     background-blend-mode: multiply;
     background-image: url(miko2.jpg);
     background-size: cover;
-    background-position: auto center;
-    background-attachment: scroll;
     background-repeat: no-repeat;
-}
-
-.bb {
-    background-color: white;
-    opacity: 0.8;
-    float: left;
 }
 
 .hf {
     border: 5px dotted gray;
     padding: 5px 5px;
     text-align: center;
-    margin: 100px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0
 }
