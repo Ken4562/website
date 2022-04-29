@@ -6,6 +6,9 @@
     animation: bganimation 10s infinite;
 }
 
+
+/* 變色動畫 */
+
 @keyframes bganimation {
     0% {
         background-position: 0% 50%;
@@ -18,6 +21,9 @@
     }
 }
 
+
+/* 背景 */
+
 body {
     background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
@@ -25,14 +31,20 @@ body {
     background-blend-mode: multiply;
     background-image: url(miko2.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat fixed;
 }
+
+
+/* 點點邊框 */
 
 .hf {
     border: 5px dotted gray;
     padding: 5px 5px;
     text-align: center;
 }
+
+
+/* 讓頁尾始終保持在最底部 */
 
 footer {
     position: fixed;
