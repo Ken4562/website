@@ -6,63 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="練習用網站">
     <title>我的個人網站</title>
-    <style>
-        .wh {
-            font-size: 20px;
-            color: white;
-        }
-        /* footer {
-            position: fixed;
-            bottom: 0
-        } */
-        
-        #img {
-            background-size: cover;
-            width: 100%;
-            height: 100%;
-        }
-        /* * {
-            border: 1px solid black;
-        } */
-        
-        .patterns {
-            height: 100vh;
-        }
-        
-        svg text {
-            font-family: Lora;
-            letter-spacing: 10px;
-            stroke: #1c93ca;
-            font-size: 100px;
-            font-weight: 700;
-            stroke-width: 3;
-            animation: textAnimate 5s infinite alternate;
-        }
-        
-        @keyframes textAnimate {
-            0% {
-                stroke-dasharray: 0 50%;
-                stroke-dashoffset: 20%;
-                fill: hsl(169, 85%, 36%)
-            }
-            100% {
-                stroke-dasharray: 50% 0;
-                stroke-dashoffstet: -20%;
-                fill: hsla(189, 68%, 75%, 0%)
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
+
 </head>
 
 <body style="display:flex; margin: 0; flex-direction: column;">
     <!-- 導覽列 -->
-    <div style="align-items:flex-start; z-index: 1; height: 50px; background-color: black;">
-        <div style="align-items:center ;margin-left: 15px; height: 100%; padding-right: 30px;">
-            <a class="wh" style="text-decoration:none;" href="index.html"><b>主頁</b></a>
-            <a class="wh" style="text-decoration:none;" href="2.html"><b>神奇的東西</b></a>
-            <a class="wh" style="text-decoration:none;" href="https://github.com/Ken4562"> <b>github</b> </a>
-            <a class="wh" style="text-decoration:none;" href="https://space.bilibili.com/470736160"><b>bilibili</b> </a>
-            <a class="wh" style="text-decoration:none;" href="https://ken4562.github.io/"> <b>沒用的網站</b></a>
+    <div style="  height: 50px; background-color: black; ">
+        <div style="margin-left: 15px; height: 100%;">
+            <nav>
+                <ul>
+                    <a class="wh " style="text-decoration:none;" href="index.html">
+                        <li class="wh"><b>主頁</b></li>
+                    </a>
+                    <a class="wh " style="text-decoration:none;" href="2.html">
+                        <li class="wh"><b>神奇的東西</b></li>
+                    </a>
+                    <a class="wh " style="text-decoration:none;" href="https://github.com/Ken4562">
+                        <li class="wh"><b>github</b></li>
+                    </a>
+                    <a class="wh " style="text-decoration:none;" href="https://space.bilibili.com/470736160">
+                        <li class="wh"><b>bilibili</b></li>
+                    </a>
+                    <a class="wh " style="text-decoration:none;" href="https://ken4562.github.io/">
+                        <li class="wh"><b>沒用的網站</b></li>
+                    </a>
+                </ul>
+            </nav>
         </div>
     </div>
 
@@ -107,7 +77,7 @@
     <div style="width: 100% ;height: 80vh; display: flex; ">
         <div style=" text-align: justify; margin-left: 500px; ">
             <h1 style="text-shadow: 1px 1px 1px black, 0 0 30px blue, 0 0 1px darkblue;">關於我</h1>
-            <p style="font-size:20px ; border:5px dotted gray ; padding: 8px; justify-content: center; margin-top: 10px; align-items: center;">
+            <p style="font-size:20px ; border:5px dotted gray ; padding: 8px; justify-self: center; margin-top: 10px; align-items: center;">
                 一名國二生<br> 平常沒事喜歡看動漫、小說和打電動，
                 <br>最近看了86，非常優秀 尤其是最後兩集
                 <br>，直接封神，22集辛內心那段的表現手法
@@ -116,13 +86,13 @@
                 <br>因為他終於笑了23集相遇時的那個畫面，
                 <br>同樣也是很感動， 總之如果你還沒看的話 <br> 就快去吧，絕對不會後悔的。(夜蘭真的好正)
             </p>
-            </p>
+            <!-- </p> <audio autoplay="autoplay" controls="controls" loop="loop" preload="auto" src="Rick Astley - Never Gonna Give You Up (Video) (2).mp3"></audio> -->
         </div>
 
 
     </div>
     <!--頁尾  -->
-    <footer style="width:100% ;height: 100px; background-color: #eee; ">
+    <footer style="width:100% ;height: 100px; background-color: #eee; align-self: flex-end; ">
         <p style="text-align: center; ">版權所有 : Ken<br>信箱:luzekai878@gmail.com</p>
 
     </footer>

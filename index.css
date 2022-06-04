@@ -1,0 +1,87 @@
+.wh {
+    font-size: 20px;
+    color: white;
+}
+
+#img {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* * {
+    border: 1px solid black;
+} */
+
+.patterns {
+    height: 100vh;
+}
+
+svg text {
+    font-family: Lora;
+    letter-spacing: 10px;
+    stroke: #1c93ca;
+    font-size: 100px;
+    font-weight: 700;
+    stroke-width: 3;
+    animation: textAnimate 5s infinite alternate;
+}
+
+@keyframes textAnimate {
+    0% {
+        stroke-dasharray: 0 50%;
+        stroke-dashoffset: 20%;
+        fill: hsl(169, 85%, 36%)
+    }
+    100% {
+        stroke-dasharray: 50% 0;
+        stroke-dashoffstet: -20%;
+        fill: hsla(189, 68%, 75%, 0%)
+    }
+}
+
+nav ul li::after {
+    content: "";
+    background-color: #0059df;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    padding: 5px 5px;
+    transition: top 0.5s, opacity 0.5s;
+    margin-left: -5px;
+}
+
+.wh {
+    color: white;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 13px;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+}
+
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 10px;
+}
+
+nav ul li:hover {
+    text-shadow: 1px 1px 1px rgb(191, 26, 26), 0 0 30px rgb(84, 84, 164), 0 0 1px rgb(172, 165, 30);
+}
+
+nav ul li:hover::after {
+    top: 50%;
+    opacity: 1;
+}
